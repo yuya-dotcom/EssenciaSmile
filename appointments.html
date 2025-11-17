@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="">
+    <title> Appointments | EssenciaSmile</title>
+    <!-- CSS File-->
+    <link rel="stylesheet" href="../assets/css/appointments.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-left">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            <h2> Appointments </h2>
+        </div>
+        <div class="header-right">
+            <img src="../assets/img/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <img src="../assets/img/Essencia.png" alt="EssenciaSmile Logo">
+        </div>
+        <ul>
+            <li><a href="../pages/dashboard.html"><i class="fa-solid fa-sliders"></i><span>Dashboard</span></a></li>
+            <li><a href="../pages/appointments.html" class="active"><i class="fa-solid fa-calendar-check"></i><span>Appointments</span></a></li>
+            <li><a href="../pages/sales.html"><i class="fa-solid fa-receipt"></i><span>Sales</span></a></li>
+            <li><a href="../pages/inventory.html"><i class="fa-solid fa-warehouse"></i><span>Inventory</span></a></li>
+            <li><a href="../pages/patients.html"><i class="fa-solid fa-clipboard"></i><span>Patients</span></a></li>
+            <li><a href="../pages/branches.html"><i class="fa-solid fa-location-dot"></i><span>Branches</span></a></li>
+            <li><a href="../pages/analytics.html"><i class="fa-solid fa-chart-simple"></i><span>Analytics</span></a>
+            </li>
+            <li><a href="../pages/accounts.html"><i class="fa-solid fa-user-lock"></i><span>Accounts</span></a></li>
+            <li><a href="../pages/settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN-MAIN-MAIN -->
+    <main class="main-content">
+        <div class="grid-container">
+            <div class="title-left">
+                <h2> Manage Appointments </h2>
+
+                <div class="title-right">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search appointment...">
+                    </div>
+                    <button onclick=showAddNewAcc() class="add-btn">
+                        <i class="fa-solid fa-plus"></i> Add appointment
+                    </button>
+                </div>
+            </div>
+            <!-- TABLE --- TABLE -->
+            <div class="table-wrapper">
+                <table class="table-container">
+                    <thead>
+                        <tr>
+                            <th> Patient name </th>
+                            <th> Dentist </th>
+                            <th> Service</th>
+                            <th> Branch</th>
+                            <th> Date </th>
+                            <th> Time </th>
+                            <th> Status </th>
+                            <th> Actions </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Vinson, Yuya </td>
+                            <td> Dra. Ronalyn </td>
+                            <td> Brace Adjustment</td>
+                            <td> Novaliches</td>
+                            <td> 10/21/2025 </td>
+                            <td> 2pm </td>
+                            <td> Done </td>
+                            <td class="actions">
+                                <button class="action-btn view"><i class="fa-solid fa-eye"></i></button>
+                                <button class="action-btn edit"><i class="fa-solid fa-user-pen"></i></button>
+                                <button class="action-btn delete"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </main>
+
+
+    <script src="../assets/js/sidebar.js"></script>
+</body>
+
+</html>

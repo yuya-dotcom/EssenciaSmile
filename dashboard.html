@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img/png" href="">
+  <title> Dashboard | EssenciaSmile</title>
+  <!-- CSS File-->
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+  
+<body>
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <i class="fa-solid fa-bars" id="menu-toggle"></i>
+      <h2>Dashboard</h2>
+    </div>
+    <div class="header-right">
+      <img src="../assets/img/logo.png" alt="logo">
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="../assets/img/Essencia.png" alt="EssenciaSmile Logo">
+    </div>
+    <ul>
+      <li><a href="../pages/dashboard.html" class="active"><i class="fa-solid fa-sliders"></i><span>Dashboard</span></a></li>
+      <li><a href="../pages/appointments.html"><i class="fa-solid fa-calendar-check"></i><span>Appointments</span></a></li>
+      <li><a href="../pages/sales.html"><i class="fa-solid fa-receipt"></i><span>Sales</span></a></li>
+      <li><a href="#"><i class="fa-solid fa-warehouse"></i><span>Inventory</span></a></li>
+      <li><a href="../pages/patients.html"><i class="fa-solid fa-clipboard"></i><span>Patients</span></a></li>
+      <li><a href="#"><i class="fa-solid fa-location-dot"></i><span>Branches</span></a></li>
+      <li><a href="#"><i class="fa-solid fa-chart-simple"></i><span>Analytics</span></a></li>
+      <li><a href="../pages/accounts.html"><i class="fa-solid fa-user-lock"></i><span>Accounts</span></a></li>
+      <li><a href="#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+      <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="card-container">
+      <div class="card-appointments">
+        <span>Appointments</span>
+        <h3 id="appointmentValue">41</h3>
+        <hr>
+        <span>Today</span>
+      </div>
+      <div class="card-revenue">
+        <span>Revenue</span>
+        <h3 id="revenueValue">₱110,000</h3>
+        <hr>
+        <span>This month</span>
+      </div>
+      <div class="card-inventory">
+        <span>Inventory</span>
+        <h3 id="inventoryValue">5 items</h3>
+        <hr>
+        <span id="inventoryStatus">Low Stock</span>
+      </div>
+      <div class="card-newPatients">
+        <span>New Patients</span>
+        <h3 id="patientValue">+7</h3>
+        <hr>
+        <span id="patientStatus">This Week</span>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <div class="chart-monthly-sales">
+        <h2>Monthly Sales</h2>
+        <canvas id="myChartSales"></canvas>
+      </div>
+
+      <div class="chart-monthly-patients">
+        <h2>Monthly Patients</h2>
+        <canvas id="myChartPatients"></canvas>
+      </div>
+    </div>
+  </main>
+
+  <!-- Load Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Load your dashboard and chart scripts -->
+  <script src="../assets/js/sidebar.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/chart.js"></script>
+
+</body>
+
+</html>

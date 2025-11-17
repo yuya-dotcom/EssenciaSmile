@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login | EssenciaSmile</title>
+    <!-- CSS File-->
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="login-container">
+
+        <!-- LOG IN -->
+        <h1 class="login-header"> Welcome</h1>
+        <span class="login-subtitle"> Login your account</span>
+
+        <!-- LOG IN - INPUT -->
+        <span class="username"> Username: </span>
+        <div class="input-wrapper">
+            <i class="fa fa-user"></i>
+            <input type="text" id="username" placeholder="Input your username here" required/>
+        </div>
+        <span class="username"> Password: </span>
+        <div class="input-wrapper">
+            <i class="fa fa-lock"></i>
+            <input type="password" id="password" placeholder="Input your password here" required/>
+            <i class="fa fa-eye" id="togglePassword"></i>
+        </div>
+        <div id="errorMsg" class="error"></div>
+        <button id="btnLogin"> Login</button>
+    </div>
+
+    <!-- LOGIN JAVA SCRIPT -->
+    <script src="../assets/js/login.js"></script>
+</body>
+
+</html>
